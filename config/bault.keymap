@@ -25,6 +25,21 @@
             bindings = <&kp ENTER>;
             key-positions = <17 18 19>;
         };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 13 12>;
+        };
+
+        opara {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <2 1>;
+        };
+
+        cpara {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <8 7>;
+        };
     };
 
     keymap {
@@ -32,28 +47,28 @@
 
         base {
             bindings = <
-&kp Q           &kp W        &kp F           &kp P                     &kp B  &kp J        &kp L  &kp U            &kp Y        &kp SQT             &kp LEFT_BRACKET
+&kp Q           &kp W        &kp F           &kp P                     &kp B  &kp J        &kp L  &kp U            &kp Y        &kp SQT             &none
 &kp A           &hm LCTRL R  &hm LEFT_ALT S  &kp T                     &kp G  &kp M        &kp N  &hm RIGHT_ALT E  &hm RCTRL I  &kp O
 &hm LEFT_GUI X  &hm LC(X) C  &hm LC(C) D     &hm LC(V) V               &kp Z  &kp K        &kp M  &kp COMMA        &kp PERIOD   &hm LEFT_GUI SLASH
-&kp N0          &mo 3        &kp ENTER       &hm LEFT_SHIFT BACKSPACE         &lt 1 SPACE         &mo 1            &mo 2        &kp N0
+&kp N0          &none        &lt 2 ESCAPE    &hm LEFT_SHIFT BACKSPACE         &lt 1 SPACE         &mo 1            &none        &none
             >;
         };
 
         layer_1 {
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7    &kp N8    &kp N9     &kp N0     &studio_unlock
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp UP    &kp MINUS  &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&kp N0  &trans  &trans  &trans          &trans            &trans    &trans     &kp N0
+&none     &none     &kp UP_ARROW  &none      &none  &kp GRAVE  &kp N7        &kp N8        &kp N9        &kp NON_US_BACKSLASH  &sys_reset
+&kp SEMI  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &kp MINUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&none     &none     &none         &none      &none  &kp EQUAL  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &none
+&none     &trans    &trans        &trans            &trans                   &trans        &trans        &none
             >;
         };
 
         connectivity {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bootloader
-&trans  &trans  &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &trans
-&kp N0  &trans  &trans  &trans          &trans                      &trans        &trans        &kp N0
+&trans  &trans           &trans        &trans       &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bootloader
+&trans  &kp LC(LS(TAB))  &trans        &kp LC(TAB)  &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &kp C_VOL_DN     &kp C_VOL_UP  &trans       &trans  &bt BT_CLR    &out OUT_BLE  &out OUT_USB  &out OUT_TOG  &trans
+&kp N0  &trans           &trans        &trans               &trans                      &trans        &trans        &kp N0
             >;
         };
     };
