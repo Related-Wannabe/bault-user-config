@@ -24,5 +24,3 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: bault_studio
   - board: bault
-    snippet: zmk-usb-logging
-    artifact-name: bault_logging
