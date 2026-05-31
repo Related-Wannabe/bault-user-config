@@ -91,10 +91,10 @@
 
         base {
             bindings = <
-&kp Q           &hm LC(W) W         &kp F           &kp P                     &Reload  &kp J        &kp L  &kp U           &kp Y               &kp APOS  &kp C_MUTE
+&kp Q           &hm LC(W) W         &kp F           &kp P                     &Reload  &kp J        &kp L  &kp U           &kp Y               &kp APOS            &kp C_MUTE
 &kp A           &hm LEFT_CONTROL R  &hm LEFT_ALT S  &kp T                     &kp G    &kp M        &kp N  &hm LEFT_ALT E  &hm LEFT_CONTROL I  &kp O
-&hm LEFT_GUI X  &kp C               &kp D           &kp V                     &kp Z    &kp K        &kp H  &kp COMMA       &kp DOT             &kp FSLH
-&none           &none               &lt 2 ESCAPE    &hm LEFT_SHIFT BACKSPACE           &lt 3 SPACE         &lt 1 DELETE    &lt 1 DEL           &none
+&hm LEFT_GUI X  &kp C               &kp D           &kp V                     &kp Z    &kp K        &kp H  &kp COMMA       &kp DOT             &hm LEFT_GUI SLASH
+&none           &none               &lt 2 ESCAPE    &hm LEFT_SHIFT BACKSPACE           &lt 3 SPACE         &lt 1 DELETE    &none               &none
             >;
         };
 
@@ -103,7 +103,7 @@
 &bt BT_CLR  &none  &none  &none         &none  &none         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &none         &kp C_VOL_UP
 &none       &none  &none  &none         &none  &soft_off     &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &kp C_VOL_DN
 &none       &none  &none  &none         &none  &none         &none          &none          &none          &none
-&none       &none  &none  &out OUT_BLE         &out OUT_USB                 &trans         &trans         &none
+&none       &none  &none  &out OUT_BLE         &out OUT_USB                 &trans         &none          &none
             >;
         };
 
@@ -118,10 +118,10 @@
 
         NavSym {
             bindings = <
-&none     &kp HOME  &kp UP_ARROW  &kp END    &none  &none   &kp AMPERSAND    &kp ASTERISK       &kp EQUAL  &kp BACKSLASH  &caps_word
-&kp SEMI  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &none   &kp EXCLAMATION  &kp AT_SIGN        &kp POUND  &kp COLON
-&none     &none     &none         &none      &none  &none   &kp DOLLAR       &kp PERCENT        &kp CARET  &kp TILDE
-&none     &none     &none         &trans            &trans                   &kp RA(BACKSPACE)  &none      &none
+&none     &kp HOME  &kp UP_ARROW  &kp END    &none  &none   &kp AMPERSAND    &kp ASTERISK  &kp EQUAL  &kp BACKSLASH  &caps_word
+&kp SEMI  &kp LEFT  &kp DOWN      &kp RIGHT  &none  &none   &kp EXCLAMATION  &kp AT_SIGN   &kp POUND  &kp COLON
+&none     &none     &none         &none      &none  &none   &kp DOLLAR       &kp PERCENT   &kp CARET  &kp TILDE
+&none     &none     &none         &trans            &trans                   &none         &none      &none
             >;
         };
     };
