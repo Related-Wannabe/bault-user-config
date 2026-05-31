@@ -98,10 +98,10 @@
 
         base {
             bindings = <
-&kp Q           &mt LC(W) W         &kp F           &kp P                     &Reload  &kp J        &kp L  &kp U           &kp Y               &kp APOS  &kp C_MUTE
-&kp A           &mt LEFT_CONTROL R  &mt LEFT_ALT S  &kp T                     &kp G    &kp M        &kp N  &mt LEFT_ALT E  &mt LEFT_CONTROL I  &kp O
-&mt LEFT_GUI X  &kp C               &kp D           &kp V                     &kp Z    &kp K        &kp H  &kp COMMA       &kp DOT             &kp FSLH
-&none           &none               &lt 2 ESCAPE    &mt LEFT_SHIFT BACKSPACE           &lt 3 SPACE         &lt 1 DELETE    &lt 1 DEL
+&kp Q           &hm LC(W) W         &kp F           &kp P                     &Reload  &kp J        &kp L  &kp U           &kp Y               &kp APOS  &kp C_MUTE
+&kp A           &hm LEFT_CONTROL R  &hm LEFT_ALT S  &kp T                     &kp G    &kp M        &kp N  &hm LEFT_ALT E  &hm LEFT_CONTROL I  &kp O
+&hm LEFT_GUI X  &kp C               &kp D           &kp V                     &kp Z    &kp K        &kp H  &kp COMMA       &kp DOT             &kp FSLH
+&none           &none               &lt 2 ESCAPE    &hm LEFT_SHIFT BACKSPACE           &lt 3 SPACE         &lt 1 DELETE    &lt 1 DEL
             >;
         };
 
