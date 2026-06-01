@@ -94,7 +94,7 @@
 &kp Q           &hm LC(W) W         &kp F           &kp P                     &Reload  &kp J        &kp L  &kp U           &kp Y               &kp APOS            &kp C_MUTE
 &kp A           &hm LEFT_CONTROL R  &hm LEFT_ALT S  &kp T                     &kp G    &kp M        &kp N  &hm LEFT_ALT E  &hm LEFT_CONTROL I  &kp O
 &hm LEFT_GUI X  &kp C               &kp D           &kp V                     &kp Z    &kp K        &kp H  &kp COMMA       &kp DOT             &hm LEFT_GUI SLASH
-&none           &none               &lt 2 ESCAPE    &hm LEFT_SHIFT BACKSPACE           &lt 3 SPACE         &lt 1 DELETE    &none               &none
+&none           &none               &lt 2 ESCAPE    &hm LEFT_SHIFT BACKSPACE           &lt 3 SPACE         &lt 1 ENTER     &none               &lt 1 DELETE
             >;
         };
 
